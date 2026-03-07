@@ -1,3 +1,5 @@
 cd kvmtool
-make -j10
-cp ./lkvm ../shared/
+
+make -j$(nproc) LIBFDT_DIR=/usr/lib/aarch64-linux-gnu/ LDFLAGS="-static"
+
+cp lkvm ../rootfs/shared/

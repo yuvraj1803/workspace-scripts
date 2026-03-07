@@ -6,7 +6,7 @@ qemu-system-aarch64 \
 	     -machine virt,secure=on,gic-version=3,virtualization=on,acpi=off \
 	     -bios tfa/build/qemu/debug/qemu_fw.bios \
 	     -drive file=rootfs/noble-base-arm64.img,if=none,format=raw,id=hd0 -device virtio-blk-device,drive=hd0 \
-	     -m 128M \
+	     -m 512M \
 	     -append "rootwait nokaslr root=/dev/vda rw init=/bin/bash console=ttyAMA0" \
 	     -serial mon:stdio \
 	     -serial tcp:localhost:12345 \

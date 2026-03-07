@@ -1,9 +1,9 @@
 set -e
 mkdir -p root
-mount buildroot/output/images/rootfs.ext4 root
+mount rootfs/noble-base-arm64.img root
 cd root/root
 rm -rf *
-cp -r ../../shared/. .
+cp -r ../../rootfs/shared/. .
 cd ../../
 umount root
 rm -rf root

@@ -3,7 +3,6 @@ You can add more components like: TF-A, TF-RMM, etc. but keep this structure int
 
 workspace-scripts should be run from the workspace.
 Like this:
-
 	$ pwd
 	~/workspace
 	
